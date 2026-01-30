@@ -1,30 +1,60 @@
-#  LinkTreeLoja
+# LinkTreeLoja
 
-Este projeto foi criado para servir como uma página de links personalizada (similar ao Linktree), voltada para uma loja de informática que oferece serviços de conserto de computadores, impressoras, celulares e televisores.
+Uma página de links personalizada (similar ao Linktree) para uma loja de informática especializada em conserto e manutenção de computadores, impressoras, celulares e televisores.
 
----
+## 📋 Sobre o Projeto
 
-## Como foi criado
+LinkTreeLoja é uma solução web moderna e responsiva que centraliza todos os serviços e contatos da loja em uma única página acessível.
 
-1. **Configuração inicial**
-   - O projeto foi iniciado com [Vite](https://vitejs.dev/) e [React](https://react.dev/).
-   - Foi configurado o `vite.config.js` para ajustar o build e permitir acesso via ngrok.
+## 🛠️ Tecnologias Utilizadas
 
-2. **Estrutura de componentes**
-   - Criamos componentes em React para organizar o conteúdo:
-     - `Trabalhos.jsx`: mostra os serviços realizados com cards e imagens.
-     - `Links.jsx`: lista de links de contato (Google Avaliações, Google Maps, Facebook, WhatsApp, Celular).
-     - `Header.jsx`: cabeçalho com o logo da loja.
+- **Vite** - Build tool rápido e otimizado
+- **React** - Biblioteca para interface de usuário
+- **CSS** - Estilização e responsividade
+- **React Router** - Navegação entre páginas
 
-3. **Imagens**
-   - As imagens foram adicionadas na pasta `src/assets` ou `public/`.
-   - No React, usamos `import` para que o Vite inclua corretamente no build.
+## 📁 Estrutura do Projeto
 
-4. **Estilização**
-   - Utilizamos CSS para criar uma grade de trabalhos e estilizar os cards.
-   - Responsividade foi aplicada para funcionar bem em celulares.
+```
+src/
+├── components/
+│   ├── Header.jsx          # Cabeçalho com logo
+│   ├── Trabalhos.jsx       # Galeria de serviços
+│   └── Links.jsx           # Links de contato
+├── assets/                 # Imagens e recursos
+└── styles/
+   └── index.css           # Estilos globais
+```
 
-5. **Build e Deploy**
-   - O build é gerado com `npm run build`.
-   - Os arquivos finais ficam na pasta `dist/`.
-   - Testes foram feitos com `vite preview` e também com **ngrok** para acesso externo.
+## 🎯 Funcionalidades
+
+- **Galeria de Serviços** - Cards com descrição de trabalhos realizados
+- **Links de Contato** - Acesso direto a Google Avaliações, Google Maps, Facebook, WhatsApp e telefone
+- **Design Responsivo** - Otimizado para desktop, tablet e celular
+- **Performance** - Otimizado com Vite para carregamento rápido
+
+## 🚀 Como Rodar Localmente
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar em desenvolvimento
+npm run dev
+
+# Fazer build para produção
+npm run build
+
+# Visualizar build
+npm run preview
+```
+
+## 📦 Deploy
+
+Os arquivos compilados são gerados na pasta `dist/` e podem ser deplorados em qualquer servidor estático ou plataforma como Vercel, Netlify ou ngrok.
+
+## 📝 Notas
+
+- Imagens armazenadas em `src/assets/` ou `public/`
+- Configuração do `vite.config.js` para acesso externo via ngrok
+- Build otimizado para melhor performance em mobile
