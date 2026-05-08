@@ -2,19 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <script>
-      (function () {
-        var fullPath =
-          window.location.pathname +
-          window.location.search +
-          window.location.hash;
-
-        sessionStorage.setItem("redirectPath", fullPath);
-
-        // domínio personalizado → raiz é segura
-        window.location.replace("/");
-      })();
-    </script>
   </head>
   <body></body>
 </html>
